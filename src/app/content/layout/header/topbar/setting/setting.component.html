@@ -1,0 +1,36 @@
+<a href="javascript:;" class="m-nav__link m-dropdown__toggle">
+    <span class="m-nav__link-text">
+      <i class="material-icons m-topbar__language-selected-img" style="font-size:30px !important;">
+          apps
+        </i>
+    </span>
+</a>
+<div class="m-dropdown__wrapper">
+    <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
+    <div class="m-dropdown__inner">
+      <div class="m-dropdown__header m--align-center" #mProfileDropdown style="background-size: cover;" [style.background-image]="avatarBg">
+        <div class="m-card-user m-card-user--skin-dark">
+          <div class="m-card-user__pic">
+            <img src="{{avatar}}" class="m--img-rounded m--marginless" alt="" />
+          </div>
+          <div class="m-card-user__details">
+            <span class="m-card-user__name m--font-weight-500">
+              Thiết Lập Cửa Hàng
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="m-dropdown__body">
+        <div class="m-dropdown__content">
+          <ul style="display:grid;grid-template-columns: auto auto auto;list-style-type: none;padding:0;">
+            <li>Thiết Lập Cửa Hàng</li>
+            <li>Quản lý mẫu in</li>
+            <li> Quản lý người dùng</li>
+            <li> Quản lý chi nhánh</li>
+            <li>Lịch sử thao tác</li>
+            <li>Xóa dữ liệu dùng thử</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
