@@ -1,0 +1,15 @@
+.m-dropdown__content{
+    >ul{
+        >li{
+            >a{
+                text-align: center !important;
+                display: block;
+                color:#8B8E97;
+                // text-decoration: none;
+                >i{
+                    font-size: 35px !important;
+                }
+            }
+        }
+    }
+}

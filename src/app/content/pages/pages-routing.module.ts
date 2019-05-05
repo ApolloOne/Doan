@@ -23,47 +23,47 @@ const routes: Routes = [
 				path: '',
 				loadChildren: './components/dashboard/dashboard.module#DashboardModule'
 			},
-			{
-				path: 'mail',
-				loadChildren: './components/apps/mail/mail.module#MailModule'
-			},
-			{
-				path: 'ecommerce',
-				loadChildren: './components/apps/e-commerce/e-commerce.module#ECommerceModule'
-			},
-			{
-				path: 'ngbootstrap',
-				loadChildren: './components/ngbootstrap/ngbootstrap.module#NgbootstrapModule'
-			},
-			{
-				path: 'material',
-				loadChildren: './components/material/material.module#MaterialModule'
-			},
-			{
-				path: 'metronic',
-				loadChildren: './components/metronic/metronic.module#MetronicModule'
-			},
-			{
-				path: 'user-management',
-				loadChildren: './components/user-management/user-management.module#UserManagementModule'
-			},
-			{
-				path: 'audit-log',
-				loadChildren: './components/apps/audit-log/audit-log.module#AuditLogModule'
-			},
+			// {
+			// 	path: 'mail',
+			// 	loadChildren: './components/apps/mail/mail.module#MailModule'
+			// },
+			// {
+			// 	path: 'ecommerce',
+			// 	loadChildren: './components/apps/e-commerce/e-commerce.module#ECommerceModule'
+			// },
+			// {
+			// 	path: 'ngbootstrap',
+			// 	loadChildren: './components/ngbootstrap/ngbootstrap.module#NgbootstrapModule'
+			// },
+			// {
+			// 	path: 'material',
+			// 	loadChildren: './components/material/material.module#MaterialModule'
+			// },
+			// {
+			// 	path: 'metronic',
+			// 	loadChildren: './components/metronic/metronic.module#MetronicModule'
+			// },
+			// {
+			// 	path: 'user-management',
+			// 	loadChildren: './components/user-management/user-management.module#UserManagementModule'
+			// },
+			// {
+			// 	path: 'audit-log',
+			// 	loadChildren: './components/apps/audit-log/audit-log.module#AuditLogModule'
+			// },
 			// Tam thoi bo builder
 			// {
 			// 	path: 'builder',
 			// 	loadChildren: './builder/builder.module#BuilderModule'
 			// },
-			{
-				path: 'header/actions',
-				component: ActionComponent
-			},
-			{
-				path: 'profile',
-				component: ProfileComponent
-			}
+			// {
+			// 	path: 'header/actions',
+			// 	component: ActionComponent
+			// },
+			// {
+			// 	path: 'profile',
+			// 	component: ProfileComponent
+			// }
 		]
 	},
 	{

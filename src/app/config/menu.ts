@@ -448,307 +448,353 @@ export class MenuConfig implements ConfigModel {
 									}
 								}
 							]
+						},
+					},
+					{
+						title: 'Setting',
+						root: true,
+						toggle: 'click',
+						translate: 'MENU.SETTING',
+						submenu:{
+							item:[
+								{
+									title:'Thiết Lập Cửa Hàng',
+									page:'',
+									icon:'fa fa-wrench',
+									translate:''
+								},
+								{
+									title:'Quản lý mẫu in',
+									page:'',
+									icon:'fa fa-file-text',
+									translate:''
+								},
+								{
+									title:'Quản lý người dùng',
+									page:'',
+									icon:'fa fa-male',
+									translate:''
+								},
+								{
+									title:'Quản lý chi nhánh',
+									page:'',
+									icon:'fa fa-puzzle-piece',
+									translate:''
+								},
+								{
+									title:'Lịch sử thao tác',
+									page:'',
+									icon:'fa fa-history',
+									translate:''
+								},
+								{
+									title:'Xoá dữ liệu dùng thử',
+									page:'',
+									icon:'fa fa-trash',
+									translate:''
+								}
+							]
 						}
 					}
 				]
-			},
+		},
 			aside: {
-				self: {},
-				items: [
-					{
-						title: 'Dashboard',
-						desc: 'Some description goes here',
-						root: true,
-						icon: 'flaticon-line-graph',
-						page: '/',
-						badge: {type: 'm-badge--danger', value: '2'},
-						translate: 'MENU.DASHBOARD'
-					},
-					{section: 'Components'},
-					{
-						title: 'Hàng Hoá',
-						root: true,
-						bullet: 'dot',
-						// icon: 'flaticon-interface-7',
-						icon:'fa fa-cubes',
-						submenu: [
-							{
-								title: 'Danh Mục',
-								bullet: 'dot',
-							},
-							{
-								title: 'Thiết Lập giá',
-								bullet: 'dot',
-							},
-							{
-								title: 'Kiểm Kho',
-								bullet: 'dot',
-							},
-							// {
-							// 	title: 'Buttons & Indicators',
-							// 	bullet: 'dot',
-							// 	submenu: [
-							// 		{
-							// 			title: 'Button',
-							// 			page:
-							// 				'/material/buttons-and-indicators/button'
-							// 		},
-							// 		{
-							// 			title: 'Button toggle',
-							// 			page:
-							// 				'/material/buttons-and-indicators/button-toggle'
-							// 		},
-							// 		{
-							// 			title: 'Chips',
-							// 			page:
-							// 				'/material/buttons-and-indicators/chips'
-							// 		},
-							// 		{
-							// 			title: 'Icon',
-							// 			page:
-							// 				'/material/buttons-and-indicators/icon'
-							// 		},
-							// 		{
-							// 			title: 'Progress bar',
-							// 			page:
-							// 				'/material/buttons-and-indicators/progress-bar'
-							// 		},
-							// 		{
-							// 			title: 'Progress spinner',
-							// 			page:
-							// 				'/material/buttons-and-indicators/progress-spinner'
-							// 		}
-							// 	]
-							// },
-							// {
-							// 	title: 'Popups & Modals',
-							// 	bullet: 'dot',
-							// 	submenu: [
-							// 		{
-							// 			title: 'Bottom sheet',
-							// 			page:
-							// 				'/material/popups-and-modals/bottom-sheet'
-							// 		},
-							// 		{
-							// 			title: 'Dialog',
-							// 			page:
-							// 				'/material/popups-and-modals/dialog'
-							// 		},
-							// 		{
-							// 			title: 'Snackbar',
-							// 			page:
-							// 				'/material/popups-and-modals/snackbar'
-							// 		},
-							// 		{
-							// 			title: 'Tooltip',
-							// 			page:
-							// 				'/material/popups-and-modals/tooltip'
-							// 		}
-							// 	]
-							// },
-							// {
-							// 	title: 'Data table',
-							// 	bullet: 'dot',
-							// 	submenu: [
-							// 		{
-							// 			title: 'Paginator',
-							// 			page: '/material/data-table/paginator'
-							// 		},
-							// 		{
-							// 			title: 'Sort header',
-							// 			page: '/material/data-table/sort-header'
-							// 		},
-							// 		{
-							// 			title: 'Table',
-							// 			page: '/material/data-table/table'
-							// 		}
-							// 	]
-							// }
-						]
-					},
-					{
-						title: 'Giao Dịch',
-						root: true,
-						bullet: 'dot',
-						icon:'fa fa-share',
-						submenu: [
-							{
-								title: 'Hoá Đơn',
-								page: '/ngbootstrap/accordion'
-							},
-							{
-								title: 'Trả Hàng',
-								page: '/ngbootstrap/alert'
-							},
-							{
-								title: 'Nhập Hàng',
-								page: '/ngbootstrap/buttons'
-							},
-							{
-								title: 'Trả Hàng Nhập',
-								page: '/ngbootstrap/collapse'
-							},
-							{
-								title: 'Xuất Huỷ',
-								page: '/ngbootstrap/datepicker'
-							}
-						]
-					},
-					{
-						title: 'Đối Tác',
-						root: true,
-						bullet: 'dot',
-						icon:'fa fa-male',
-						submenu: [
-							{
-								title: 'Khách Hàng',
-								page: '/ngbootstrap/accordion'
-							},
-							{
-								title: 'Nhà Cung Cấp',
-								page: '/ngbootstrap/alert'
-							}
-						]
-					},
-					{
-						title: 'Sổ Quỹ',
-						root: true,
-						bullet: 'dot',
-						icon:'fa fa-book'
-					},
-					{
-						title: 'Báo Cáo',
-						root: true,
-						bullet: 'dot',
-						icon:'fa fa-male',
-						submenu: [
-							{
-								title: 'Cuối Ngày',
-								page: '/ngbootstrap/accordion'
-							},
-							{
-								title: 'Bán Hàng',
-								page: '/ngbootstrap/alert'
-							},
-							{
-								title: 'Đặt Hàng',
-								page: '/ngbootstrap/buttons'
-							},
-							{
-								title: 'Hàng Hoá',
-								page: '/ngbootstrap/collapse'
-							},
-							{
-								title: 'Khách Hàng',
-								page: '/ngbootstrap/datepicker'
-							},
-							{
-								title: 'Nhà Cung cấp',
-								page: '/ngbootstrap/datepicker'
-							},
-							{
-								title: 'Nhân viên',
-								page: '/ngbootstrap/datepicker'
-							},
-							{
-								title: 'Kênh Bán Hàng',
-								page: '/ngbootstrap/datepicker'
-							},
-							{
-								title: 'Tài Chính',
-								page: '/ngbootstrap/datepicker'
-							}
-						]
-					}
-					// {section: 'Applications'},
-					// {
-					// 	title: 'eCommerce',
-					// 	bullet: 'dot',
-					// 	icon: 'flaticon-business',
-					// 	root: true,
-					// 	submenu: [
-					// 		{
-					// 			title: 'Customers',
-					// 			page: '/ecommerce/customers'
-					// 		},
-					// 		{
-					// 			title: 'Orders',
-					// 			page: '/ecommerce/orders'
-					// 		},
-					// 		{
-					// 			title: 'Products',
-					// 			page: '/ecommerce/products'
-					// 		},
-					// 	]
-					// },
-					// {
-					// 	title: 'User Management',
-					// 	root: true,
-					// 	bullet: 'dot',
-					// 	icon: 'flaticon-user',
-					// 	page: '/user-management'
-					// },
-					// {
-					// 	title: 'Audit Log',
-					// 	root: true,
-					// 	bullet: 'dot',
-					// 	icon: 'flaticon-interface-5',
-					// 	page: '/audit-log'
-					// },
-					// {section: 'Pages'},
-					// {
-					// 	title: 'User',
-					// 	root: true,
-					// 	bullet: 'dot',
-					// 	icon: 'flaticon-interface-1',
-					// 	submenu: [
-					// 		{
-					// 			title: 'Profile',
-					// 			page: '/profile'
-					// 		},
-					// 	]
-					// },
-					// {
-					// 	title: 'Error',
-					// 	root: true,
-					// 	bullet: 'dot',
-					// 	icon: 'flaticon-interface-2',
-					// 	submenu: [
-					// 		{
-					// 			title: 'Error-1',
-					// 			page: '/error/1'
-					// 		},
-					// 		{
-					// 			title: 'Error-2',
-					// 			page: '/error/2'
-					// 		},
-					// 		{
-					// 			title: 'Error-3',
-					// 			page: '/error/3'
-					// 		},
-					// 		{
-					// 			title: 'Error-4',
-					// 			page: '/error/4'
-					// 		},
-					// 		{
-					// 			title: 'Error-5',
-					// 			page: '/error/5'
-					// 		},
-					// 		{
-					// 			title: 'Error-6',
-					// 			page: '/error/6'
-					// 		},
-					// 	]
-					// },
-					// {section: 'Tools'},
-					// {
-					// 	title: 'Layout Builder',
-					// 	root: true,
-					// 	icon: 'flaticon-settings',
-					// 	page: '/builder'
-					// }
-				]
-			}
-		};
-	}
+			self: { },
+			items: [
+				{
+					title: 'Dashboard',
+					desc: 'Some description goes here',
+					root: true,
+					icon: 'flaticon-line-graph',
+					page: '/',
+					badge: { type: 'm-badge--danger', value: '2' },
+					translate: 'MENU.DASHBOARD'
+				},
+				{ section: 'Quản Lý Cửa Hàng' },
+				{	
+					title: 'Hàng Hoá',
+					root: true,
+					bullet: 'dot',
+					// icon: 'flaticon-interface-7',
+					icon: 'fa fa-cubes',
+					submenu: [
+						{
+							title: 'Danh Mục',
+							bullet: 'dot',
+						},
+						{
+							title: 'Thiết Lập giá',
+							bullet: 'dot',
+						},
+						{
+							title: 'Kiểm Kho',
+							bullet: 'dot',
+						},
+						// {
+						// 	title: 'Buttons & Indicators',
+						// 	bullet: 'dot',
+						// 	submenu: [
+						// 		{
+						// 			title: 'Button',
+						// 			page:
+						// 				'/material/buttons-and-indicators/button'
+						// 		},
+						// 		{
+						// 			title: 'Button toggle',
+						// 			page:
+						// 				'/material/buttons-and-indicators/button-toggle'
+						// 		},
+						// 		{
+						// 			title: 'Chips',
+						// 			page:
+						// 				'/material/buttons-and-indicators/chips'
+						// 		},
+						// 		{
+						// 			title: 'Icon',
+						// 			page:
+						// 				'/material/buttons-and-indicators/icon'
+						// 		},
+						// 		{
+						// 			title: 'Progress bar',
+						// 			page:
+						// 				'/material/buttons-and-indicators/progress-bar'
+						// 		},
+						// 		{
+						// 			title: 'Progress spinner',
+						// 			page:
+						// 				'/material/buttons-and-indicators/progress-spinner'
+						// 		}
+						// 	]
+						// },
+						// {
+						// 	title: 'Popups & Modals',
+						// 	bullet: 'dot',
+						// 	submenu: [
+						// 		{
+						// 			title: 'Bottom sheet',
+						// 			page:
+						// 				'/material/popups-and-modals/bottom-sheet'
+						// 		},
+						// 		{
+						// 			title: 'Dialog',
+						// 			page:
+						// 				'/material/popups-and-modals/dialog'
+						// 		},
+						// 		{
+						// 			title: 'Snackbar',
+						// 			page:
+						// 				'/material/popups-and-modals/snackbar'
+						// 		},
+						// 		{
+						// 			title: 'Tooltip',
+						// 			page:
+						// 				'/material/popups-and-modals/tooltip'
+						// 		}
+						// 	]
+						// },
+						// {
+						// 	title: 'Data table',
+						// 	bullet: 'dot',
+						// 	submenu: [
+						// 		{
+						// 			title: 'Paginator',
+						// 			page: '/material/data-table/paginator'
+						// 		},
+						// 		{
+						// 			title: 'Sort header',
+						// 			page: '/material/data-table/sort-header'
+						// 		},
+						// 		{
+						// 			title: 'Table',
+						// 			page: '/material/data-table/table'
+						// 		}
+						// 	]
+						// }
+					]
+				},
+				{
+					title: 'Giao Dịch',
+					root: true,
+					bullet: 'dot',
+					icon: 'fa fa-share',
+					submenu: [
+						{
+							title: 'Hoá Đơn',
+							page: '/ngbootstrap/accordion'
+						},
+						{
+							title: 'Trả Hàng',
+							page: '/ngbootstrap/alert'
+						},
+						{
+							title: 'Nhập Hàng',
+							page: '/ngbootstrap/buttons'
+						},
+						{
+							title: 'Trả Hàng Nhập',
+							page: '/ngbootstrap/collapse'
+						},
+						{
+							title: 'Xuất Huỷ',
+							page: '/ngbootstrap/datepicker'
+						}
+					]
+				},
+				{
+					title: 'Đối Tác',
+					root: true,
+					bullet: 'dot',
+					icon: 'fa fa-male',
+					submenu: [
+						{
+							title: 'Khách Hàng',
+							page: '/ngbootstrap/accordion'
+						},
+						{
+							title: 'Nhà Cung Cấp',
+							page: '/ngbootstrap/alert'
+						}
+					]
+				},
+				{
+					title: 'Sổ Quỹ',
+					root: true,
+					bullet: 'dot',
+					icon: 'fa fa-book'
+				},
+				{
+					title: 'Báo Cáo',
+					root: true,
+					bullet: 'dot',
+					icon: 'fa fa-male',
+					submenu: [
+						{
+							title: 'Cuối Ngày',
+							page: '/ngbootstrap/accordion'
+						},
+						{
+							title: 'Bán Hàng',
+							page: '/ngbootstrap/alert'
+						},
+						{
+							title: 'Đặt Hàng',
+							page: '/ngbootstrap/buttons'
+						},
+						{
+							title: 'Hàng Hoá',
+							page: '/ngbootstrap/collapse'
+						},
+						{
+							title: 'Khách Hàng',
+							page: '/ngbootstrap/datepicker'
+						},
+						{
+							title: 'Nhà Cung cấp',
+							page: '/ngbootstrap/datepicker'
+						},
+						{
+							title: 'Nhân viên',
+							page: '/ngbootstrap/datepicker'
+						},
+						{
+							title: 'Kênh Bán Hàng',
+							page: '/ngbootstrap/datepicker'
+						},
+						{
+							title: 'Tài Chính',
+							page: '/ngbootstrap/datepicker'
+						}
+					]
+				}
+				// {section: 'Applications'},
+				// {
+				// 	title: 'eCommerce',
+				// 	bullet: 'dot',
+				// 	icon: 'flaticon-business',
+				// 	root: true,
+				// 	submenu: [
+				// 		{
+				// 			title: 'Customers',
+				// 			page: '/ecommerce/customers'
+				// 		},
+				// 		{
+				// 			title: 'Orders',
+				// 			page: '/ecommerce/orders'
+				// 		},
+				// 		{
+				// 			title: 'Products',
+				// 			page: '/ecommerce/products'
+				// 		},
+				// 	]
+				// },
+				// {
+				// 	title: 'User Management',
+				// 	root: true,
+				// 	bullet: 'dot',
+				// 	icon: 'flaticon-user',
+				// 	page: '/user-management'
+				// },
+				// {
+				// 	title: 'Audit Log',
+				// 	root: true,
+				// 	bullet: 'dot',
+				// 	icon: 'flaticon-interface-5',
+				// 	page: '/audit-log'
+				// },
+				// {section: 'Pages'},
+				// {
+				// 	title: 'User',
+				// 	root: true,
+				// 	bullet: 'dot',
+				// 	icon: 'flaticon-interface-1',
+				// 	submenu: [
+				// 		{
+				// 			title: 'Profile',
+				// 			page: '/profile'
+				// 		},
+				// 	]
+				// },
+				// {
+				// 	title: 'Error',
+				// 	root: true,
+				// 	bullet: 'dot',
+				// 	icon: 'flaticon-interface-2',
+				// 	submenu: [
+				// 		{
+				// 			title: 'Error-1',
+				// 			page: '/error/1'
+				// 		},
+				// 		{
+				// 			title: 'Error-2',
+				// 			page: '/error/2'
+				// 		},
+				// 		{
+				// 			title: 'Error-3',
+				// 			page: '/error/3'
+				// 		},
+				// 		{
+				// 			title: 'Error-4',
+				// 			page: '/error/4'
+				// 		},
+				// 		{
+				// 			title: 'Error-5',
+				// 			page: '/error/5'
+				// 		},
+				// 		{
+				// 			title: 'Error-6',
+				// 			page: '/error/6'
+				// 		},
+				// 	]
+				// },
+				// {section: 'Tools'},
+				// {
+				// 	title: 'Layout Builder',
+				// 	root: true,
+				// 	icon: 'flaticon-settings',
+				// 	page: '/builder'
+				// }
+			]
+		}
+	};
+}
 }

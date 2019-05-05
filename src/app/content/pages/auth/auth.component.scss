@@ -1,9 +1,17 @@
 mat-card {
-    flex: 1 1 100%;
-    max-width: 30%;
-    margin: auto auto;
-    max-height: 90%;
+    width: 450px;
+    height: 600px;
 }
-.t-fixed-margin{
-    margin: 25% 0 !important;
+.bg {
+  background-image: url("../../../../assets/app/media/img/bg/bg-8.jpg");
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

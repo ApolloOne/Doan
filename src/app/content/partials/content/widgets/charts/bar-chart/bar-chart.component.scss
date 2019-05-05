@@ -1,9 +1,22 @@
-ul{
-    list-style-type: none;
-    li{
-        float: right;
-        i{
-            font-size: 25px !important;
-        }
+ul {
+  list-style-type: none;
+  li {
+    float: right;
+    i {
+      font-size: 25px !important;
     }
+  }
+}
+.option-date{
+  select{
+    width: 80px;
+    option{
+      width:60px;
+    }
+  }
+}
+.m-widget14__header{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
 }
