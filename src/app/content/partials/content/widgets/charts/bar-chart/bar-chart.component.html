@@ -1,12 +1,13 @@
 <mat-card>
 	<div class="m-widget14">
 		<div class="m-widget14__header">
-			<div>
+			<div class="title-card">
 				<h3 class="m-widget14__title" style="text-align: center">
 					Doanh thu các năm
 					<code>176,302,350</code>
 				</h3>
 			</div>
+			<m-charts-type></m-charts-type>
 			<m-option-date></m-option-date>
 		</div>
 		<canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"

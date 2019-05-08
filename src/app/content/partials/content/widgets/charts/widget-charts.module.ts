@@ -7,6 +7,7 @@ import {
 	MatCardModule 
 } from '@angular/material';
 import { OptionDateComponent } from './bar-chart/option-date/option-date.component';
+import { ChartsTypeComponent } from './bar-chart/charts-type/charts-type.component';
 @NgModule({
 	imports: [
 		CommonModule,
@@ -22,6 +23,7 @@ import { OptionDateComponent } from './bar-chart/option-date/option-date.compone
 		BarChartComponent,
 		DoughnutChartComponent,
 		OptionDateComponent,
+		ChartsTypeComponent,
 	]
 })
 export class WidgetChartsModule { }

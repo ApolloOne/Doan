@@ -1,0 +1,16 @@
+.type-chart {
+  ul {
+    list-style-type: none;
+    display: flex;
+    li {
+      margin: 0 10px;
+      font-size: 25px !important;
+      padding: 0 10px;
+      a{
+        :hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

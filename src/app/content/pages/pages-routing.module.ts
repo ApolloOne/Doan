@@ -23,10 +23,10 @@ const routes: Routes = [
 				path: '',
 				loadChildren: './components/dashboard/dashboard.module#DashboardModule'
 			},
-			// {
-			// 	path: 'mail',
-			// 	loadChildren: './components/apps/mail/mail.module#MailModule'
-			// },
+			{
+				path: 'products',
+				loadChildren: './components/apps/Products/Products.module#ProductsModule'
+			},
 			// {
 			// 	path: 'ecommerce',
 			// 	loadChildren: './components/apps/e-commerce/e-commerce.module#ECommerceModule'
