@@ -1,0 +1,27 @@
+<mat-tab-group>
+  <mat-tab label="Thông tin">
+    <form class="example-form">
+      <div class="row">
+        <div class="col-xl-6">
+          <mat-form-field class="example-full-width">
+            <input type="text" matInput matTooltip="Info about the action" placeholder="Mã Hàng Hoá">
+            <input matInput matTooltip="Info about the action" placeholder="Tên Hàng Hoá">
+            <mat-select placeholder="Nhóm Hàng">
+              <mat-option *ngFor="let food of foods" [value]="food.value" >
+                {{food.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-xl-6">
+          <mat-form-field class="example-full-width">
+            <input matInput matTooltip="Info about the action" placeholder="Giá vốn">
+            <input matInput matTooltip="Info about the action" placeholder="Giá Bán">
+          </mat-form-field>
+        </div>
+      </div>
+    </form>
+  </mat-tab>
+  <mat-tab label="Mô Tả chi tiết"> Content 2 </mat-tab>
+  <mat-tab label="Thành Phần"> Content 3 </mat-tab>
+</mat-tab-group>

@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.component';
 import { ChartsModule } from 'ng2-charts';
-import { 
-	MatCardModule 
+import { FormsModule } from '@angular/forms';
+import {
+	MatCardModule
 } from '@angular/material';
 import { OptionDateComponent } from './bar-chart/option-date/option-date.component';
 import { ChartsTypeComponent } from './bar-chart/charts-type/charts-type.component';
@@ -13,7 +14,8 @@ import { ChartsTypeComponent } from './bar-chart/charts-type/charts-type.compone
 		CommonModule,
 		ChartsModule,
 		// Module material 
-		MatCardModule
+		MatCardModule,
+		FormsModule
 	],
 	exports: [
 		BarChartComponent,

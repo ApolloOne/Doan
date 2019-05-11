@@ -1,15 +1,34 @@
-.t-fixed{
-    margin :15px 0 25px 0;
+.t-fixed {
+  margin: 15px 0 25px 0;
 }
-.container{
-    padding-left: 0 !important;
-    padding-right:0 !important;
+.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
-.m-subheader{
-    padding: 0 !important;
+.m-subheader {
+  padding: 0 !important;
 }
-.col-xl-3{
-    mat-card{
+.col-xl-3 {
+  mat-card {
+    color: #fff;
+    padding: 10px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title{
+      mat-card-subtitle{
         color:#fff;
+      }
+      mat-card-content{
+        font-size: 20px;
+      }
     }
+    .icon{
+      i{
+        font-size:65px !important;
+        text-align: center;
+      }
+    }
+  }
+
 }

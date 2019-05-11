@@ -24,46 +24,86 @@ const routes: Routes = [
 				loadChildren: './components/dashboard/dashboard.module#DashboardModule'
 			},
 			{
-				path: 'products',
-				loadChildren: './components/apps/Products/Products.module#ProductsModule'
+				path: 'Products',
+				loadChildren: './components/apps/Stock/Products/Products.module#ProductsModule'
 			},
-			// {
-			// 	path: 'ecommerce',
-			// 	loadChildren: './components/apps/e-commerce/e-commerce.module#ECommerceModule'
-			// },
-			// {
-			// 	path: 'ngbootstrap',
-			// 	loadChildren: './components/ngbootstrap/ngbootstrap.module#NgbootstrapModule'
-			// },
-			// {
-			// 	path: 'material',
-			// 	loadChildren: './components/material/material.module#MaterialModule'
-			// },
-			// {
-			// 	path: 'metronic',
-			// 	loadChildren: './components/metronic/metronic.module#MetronicModule'
-			// },
-			// {
-			// 	path: 'user-management',
-			// 	loadChildren: './components/user-management/user-management.module#UserManagementModule'
-			// },
-			// {
-			// 	path: 'audit-log',
-			// 	loadChildren: './components/apps/audit-log/audit-log.module#AuditLogModule'
-			// },
+			{
+				path:'PriceBook',
+				loadChildren:'./components/apps/Stock/PriceBook/PriceBook.module#PriceBookModule'
+			},
+			{
+				path:'StockTakes',
+				loadChildren:'./components/apps/Stock/StockTakes/StockTakes.module#StockTakesModule'
+			},
+			{
+				path:'Invoices',
+				loadChildren:'./components/apps/Deal/invoices/invoices.module#InvoicesModule'
+			},
+			{
+				path:'Returns',
+				loadChildren:'./components/apps/Deal/Returns/Returns.module#ReturnsModule'
+			},
+			{
+				path:'PurchaseOrder',
+				loadChildren:'./components/apps/Deal/PurchaseOrder/PurchaseOrder.module#PurchaseOrderModule'
+			},
+			{
+				path:'PurchaseReturns',
+				loadChildren:'./components/apps/Deal/PurchaseReturns/PurchaseReturns.module#PurchaseReturnsModule'
+			},
+			{
+				path:'DamageItems',
+				loadChildren:'./components/apps/Deal/DamageItems/DamageItems.module#DamageItemsModule'
+			},
+			{
+				path:'Customers',
+				loadChildren:'./components/apps/Partner/Customers/Customers.module#CustomersModule'
+			},
+			{
+				path:'Suppliers',
+				loadChildren:'./components/apps/Partner/Suppliers/Suppliers.module#SuppliersModule'
+			},
+			{
+				path:'CashFlow',
+				loadChildren:'./components/apps/CashFlow/CashFlow.module#CashFlowModule'
+			},
+			{
+				path:'CustomerReport',
+				loadChildren:'./components/apps/Report/CustomerReport/CustomerReport.module#CustomerReportModule'
+			},
+			{
+				path:'OrderReport',
+				loadChildren:''
+			},
+			{
+				path:'ProductReport',
+				loadChildren:''
+			},
+			{
+				path:'EndOfDayReport',
+				loadChildren:''
+			},
+			{
+				path:'SupplierReport',
+				loadChildren:''
+			},
+			{
+				path:'UserReport',
+				loadChildren:''
+			},
+			{
+				path:'SaleChannelReport',
+				loadChildren:''
+			},
+			{
+				path:'FinancialReport',
+				loadChildren:''
+			}
 			// Tam thoi bo builder
 			// {
 			// 	path: 'builder',
 			// 	loadChildren: './builder/builder.module#BuilderModule'
 			// },
-			// {
-			// 	path: 'header/actions',
-			// 	component: ActionComponent
-			// },
-			// {
-			// 	path: 'profile',
-			// 	component: ProfileComponent
-			// }
 		]
 	},
 	{

@@ -1,0 +1,14 @@
+table {
+  width: 100%;
+  border-style: none;
+}
+mat-card.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  .header__right {
+    .import__file .export_file {
+      margin: 0 10px ;
+    }
+  }
+}
