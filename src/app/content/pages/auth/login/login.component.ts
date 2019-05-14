@@ -50,7 +50,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 		public authNoticeService: AuthNoticeService,
 		private translate: TranslateService,
 		private cdr: ChangeDetectorRef
-	) {}
+	) { }
 
 	submit() {
 		this.spinner.active = true;
@@ -88,17 +88,17 @@ export class LoginComponent implements OnInit, OnDestroy {
 
 		this.errors = [];
 		if (objectPath.get(f, 'form.controls.email.errors.email')) {
-			this.errors.push(this.translate.instant('AUTH.VALIDATION.INVALID', {name: this.translate.instant('AUTH.INPUT.EMAIL')}));
+			this.errors.push(this.translate.instant('AUTH.VALIDATION.INVALID', { name: this.translate.instant('AUTH.INPUT.EMAIL') }));
 		}
 		if (objectPath.get(f, 'form.controls.email.errors.required')) {
-			this.errors.push(this.translate.instant('AUTH.VALIDATION.REQUIRED', {name: this.translate.instant('AUTH.INPUT.EMAIL')}));
+			this.errors.push(this.translate.instant('AUTH.VALIDATION.REQUIRED', { name: this.translate.instant('AUTH.INPUT.EMAIL') }));
 		}
 
 		if (objectPath.get(f, 'form.controls.password.errors.required')) {
-			this.errors.push(this.translate.instant('AUTH.VALIDATION.INVALID', {name: this.translate.instant('AUTH.INPUT.PASSWORD')}));
+			this.errors.push(this.translate.instant('AUTH.VALIDATION.INVALID', { name: this.translate.instant('AUTH.INPUT.PASSWORD') }));
 		}
 		if (objectPath.get(f, 'form.controls.password.errors.minlength')) {
-			this.errors.push(this.translate.instant('AUTH.VALIDATION.MIN_LENGTH', {name: this.translate.instant('AUTH.INPUT.PASSWORD')}));
+			this.errors.push(this.translate.instant('AUTH.VALIDATION.MIN_LENGTH', { name: this.translate.instant('AUTH.INPUT.PASSWORD') }));
 		}
 
 		if (this.errors.length > 0) {

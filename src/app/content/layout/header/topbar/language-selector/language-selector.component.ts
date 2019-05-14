@@ -29,15 +29,20 @@ export class LanguageSelectorComponent implements OnInit {
 		{
 			lang: 'vi',
 			country: 'Vietnamese',
-			flag: 'assets/app/media/img/flags/020-flag.svg'
+			flag: 'assets/app/media/img/flags/vietnam.png'
 		},
+		{
+			lang: 'jp',
+			country: 'Japanese',
+			flag: 'assets/app/media/img/flags/014-japan.svg'
+		}
 	];
 
 	constructor(
 		private translationService: TranslationService,
 		private router: Router,
 		private el: ElementRef
-	) {}
+	) { }
 
 	ngOnInit() {
 		this.setSelectedLanguage();

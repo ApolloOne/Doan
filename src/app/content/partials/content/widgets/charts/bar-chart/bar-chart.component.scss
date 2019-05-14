@@ -7,6 +7,9 @@ ul {
     }
   }
 }
+mat-card {
+  margin-bottom: 30px;
+}
 .option-date {
   select {
     width: 80px;
@@ -19,4 +22,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+m-option-date {
+  margin: 0 15px;
 }

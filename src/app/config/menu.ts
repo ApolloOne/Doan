@@ -510,28 +510,34 @@ export class MenuConfig implements ConfigModel {
 						badge: { type: 'm-badge--danger', value: '2' },
 						translate: 'MENU.DASHBOARD'
 					},
-					{ section: 'Quản Lý Cửa Hàng' },
+					{
+						section: 'Quản Lý Cửa Hàng',
+					},
 					{
 						title: 'Hàng Hoá',
 						root: true,
 						bullet: 'dot',
 						// icon: 'flaticon-interface-7',
 						icon: 'fa fa-cubes',
+						translate:'MENU.STOCK.STOCK',
 						submenu: [
 							{
 								title: 'Danh Mục',
 								bullet: 'dot',
-								page: '/Products'
+								page: '/Products',
+								translate:'MENU.STOCK.CATEGORIES'
 							},
 							{
 								title: 'Thiết Lập giá',
 								bullet: 'dot',
-								page:'/PriceBook'
+								page: '/PriceBook',
+								translate:'MENU.STOCK.PRICEBOOK'
 							},
 							{
 								title: 'Kiểm Kho',
 								bullet: 'dot',
-								page:'/StockTakes'
+								page: '/StockTakes',
+								translate:'MENU.STOCK.STOCKTAKES'
 							},
 						]
 					},
@@ -540,26 +546,32 @@ export class MenuConfig implements ConfigModel {
 						root: true,
 						bullet: 'dot',
 						icon: 'fa fa-share',
+						translate:'MENU.SALE.SALE',
 						submenu: [
 							{
 								title: 'Hoá Đơn',
-								page: '/Invoices'
+								page: '/Invoices',
+								translate:'MENU.SALE.VOICES'
 							},
 							{
 								title: 'Trả Hàng',
-								page: '/Returns'
+								page: '/Returns',
+								translate:'MENU.SALE.RETURNS'
 							},
 							{
 								title: 'Nhập Hàng',
-								page: '/PurchaseOrder'
+								page: '/PurchaseOrder',
+								translate:'MENU.SALE.PURCHASEORDER'
 							},
 							{
 								title: 'Trả Hàng Nhập',
-								page: '/PurchaseReturns'
+								page: '/PurchaseReturns',
+								translate:'MENU.SALE.PURCHASERETURNS'
 							},
 							{
 								title: 'Xuất Huỷ',
-								page: '/DamageItems'
+								page: '/DamageItems',
+								translate:'MENU.SALE.DAMAGEITEMS'
 							}
 						]
 					},
@@ -568,14 +580,17 @@ export class MenuConfig implements ConfigModel {
 						root: true,
 						bullet: 'dot',
 						icon: 'fa fa-male',
+						translate:'MENU.PARTNER.PARTNER',
 						submenu: [
 							{
 								title: 'Khách Hàng',
-								page: '/Customers'
+								page: '/Customers',
+								translate:'MENU.PARTNER.CUSTOMERS'
 							},
 							{
 								title: 'Nhà Cung Cấp',
-								page: '/Suppliers'
+								page: '/Suppliers',
+								translate:'MENU.PARTNER.SUPPLIERS'
 							}
 						]
 					},
@@ -584,49 +599,60 @@ export class MenuConfig implements ConfigModel {
 						root: true,
 						bullet: 'dot',
 						icon: 'fa fa-book',
-						page:'/CashFlow'
+						page: '/CashFlow',
+						translate:'MENU.CASHFLOW.CASHFLOW'
 					},
 					{
 						title: 'Báo Cáo',
 						root: true,
 						bullet: 'dot',
 						icon: 'fa fa-male',
+						translate:'MENU.REPORT.REPORT',
 						submenu: [
 							{
 								title: 'Cuối Ngày',
-								page: '/EndOfDayReport'
+								page: '/EndOfDayReport',
+								translate:'MENU.REPORT.ENDOFDAYREPORT'
 							},
 							{
 								title: 'Bán Hàng',
-								page: '/SaleReport'
+								page: '/SaleReport',
+								translate:'MENU.REPORT.SALEREPORT'
 							},
 							{
 								title: 'Đặt Hàng',
-								page: '/OrderReport'
+								page: '/OrderReport',
+								translate:'MENU.REPORT.ORDERREPORT'
 							},
 							{
 								title: 'Hàng Hoá',
-								page: '/ProductReport'
+								page: '/ProductReport',
+								translate:'MENU.REPORT.PRODUCTREPORT'
 							},
 							{
 								title: 'Khách Hàng',
-								page: '/CustomerReport'
+								page: '/CustomerReport',
+								translate:'MENU.REPORT.CUSTOMERREPORT'
 							},
 							{
 								title: 'Nhà Cung cấp',
-								page: '/SupplierReport'
+								page: '/SupplierReport',
+								translate:'MENU.REPORT.SUPPLIERREPORT'
 							},
 							{
 								title: 'Nhân viên',
-								page: '/UserReport'
+								page: '/UserReport',
+								translate:'MENU.REPORT.USERREPORT'
 							},
 							{
 								title: 'Kênh Bán Hàng',
-								page: '/SaleChannelReport'
+								page: '/SaleChannelReport',
+								translate:'MENU.REPORT.SALECHANNELREPORT'
 							},
 							{
 								title: 'Tài Chính',
-								page: '/FinancialReport'
+								page: '/FinancialReport',
+								translate:'MENU.REPORT.FINANCIALREPORT'
 							}
 						]
 					}

@@ -1,6 +1,8 @@
-<m-charts-type></m-charts-type>
-<div class="option-date">
-    <select name="" id="">
-      <option *ngFor="let OptionDate of OptionDates" [value]="OptionDate.value">{{OptionDate.labelView}}</option>
-    </select>
+<mat-form-field>
+  <div class="option-date">
+      <!-- <mat-label>Tuần này</mat-label> -->
+    <mat-select name="" id="">
+      <mat-option *ngFor="let OptionDate of OptionDates" [value]="OptionDate.value">{{OptionDate.labelView}}</mat-option>
+    </mat-select>
   </div>
+</mat-form-field>

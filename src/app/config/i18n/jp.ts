@@ -6,52 +6,48 @@ export const locale = {
 			SELECT: 'あなたが使う言語を選んでください',
 		},
 		MENU: {
-			NEW: '新しい',
+			STOCK: {
+				STOCK: '新しい',
+				CATEGORIES: 'カテゴリー',
+				PRICEBOOK: 'プライスブック',
+				STOCKTAKES: '在庫'
+			},
+			SALE: {
+				SALE: '取引',
+				VOICES: '声',
+				RETURNS: '返品',
+				PURCHASEORDER: '注文書',
+				PURCHASERETURNS: '購入リターン',
+				DAMAGEITEMS: '損害アイテム'
+			},
+			PARTNER: {
+				PARTNER:'パートナー',
+				CUSTOMERS: 'お客様',
+				SUPPLIERS: 'サプライヤー',
+			},
+			CASHFLOW: {
+				CASHFLOW:'現金流量'
+			},
+			REPORT:{
+				REPORT:'報告書',
+				ENDOFDAYREPORT:'1日の終わりレポート',
+				SALEREPORT:'セールスレポート',
+				ORDERREPORT:'注文レポート',
+				PRODUCTREPORT:'製品レポート',
+				CUSTOMERREPORT:'顧客レポート',
+				SUPPLIERREPORT:'サプライヤレポート',
+				USERREPORT:'ユーザーレポート',
+				SALECHANNELREPORT:'販売チャネルレポート',
+				FINANCIALREPORT:'財務報告'
+			},
 			ACTIONS: '行動',
 			CREATE_POST: '新しい投稿を作成',
 			REPORTS: 'レポート',
 			APPS: 'アプリ',
 			DASHBOARD: 'ダッシュボード'
 		},
-		AUTH: {
-			GENERAL: {
-				OR: 'または',
-				SUBMIT_BUTTON: '提出する',
-				NO_ACCOUNT: 'アカウントを持っていない？',
-				SIGNUP_BUTTON: 'サインアップ',
-				FORGOT_BUTTON: 'パスワードをお忘れですか',
-				BACK_BUTTON: 'バック',
-				PRIVACY: 'プライバシー',
-				LEGAL: '法的',
-				CONTACT: '接触',
-			},
-			LOGIN: {
-				TITLE: 'Create Account',
-				BUTTON: 'Sign In',
-			},
-			FORGOT: {
-				TITLE: 'Forgotten Password?',
-				DESC: 'Enter your email to reset your password',
-			},
-			REGISTER: {
-				TITLE: 'Sign Up',
-				DESC: 'Enter your details to create your account',
-				SUCCESS: 'Your account has been successfuly registered. Please use your registered account to login.'
-			},
-			INPUT: {
-				EMAIL: 'Email',
-				FULLNAME: 'Fullname',
-				PASSWORD: 'Password',
-				CONFIRM_PASSWORD: 'Confirm Password',
-			},
-			VALIDATION: {
-				INVALID: '{{name}} is not valid',
-				REQUIRED: '{{name}} is required',
-				MIN_LENGTH: '{{name}} minimum length is {{min}}',
-				AGREEMENT_REQUIRED: 'Accepting terms & conditions are required',
-				NOT_FOUND: 'The requested {{name}} is not found',
-				INVALID_LOGIN: 'The login detail is incorrect'
-			}
+		WORKFLOW: {
+			HISTORY:'ワークフロー'
 		},
 		ECOMMERCE: {
 			COMMON: {

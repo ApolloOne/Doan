@@ -5,7 +5,8 @@ import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.componen
 import { ChartsModule } from 'ng2-charts';
 import { FormsModule } from '@angular/forms';
 import {
-	MatCardModule
+	MatCardModule,
+	MatSelectModule
 } from '@angular/material';
 import { OptionDateComponent } from './bar-chart/option-date/option-date.component';
 import { ChartsTypeComponent } from './bar-chart/charts-type/charts-type.component';
@@ -15,7 +16,8 @@ import { ChartsTypeComponent } from './bar-chart/charts-type/charts-type.compone
 		ChartsModule,
 		// Module material 
 		MatCardModule,
-		FormsModule
+		FormsModule,
+		MatSelectModule
 	],
 	exports: [
 		BarChartComponent,
