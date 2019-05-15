@@ -3,22 +3,34 @@
     <form class="example-form">
       <div class="row">
         <div class="col-xl-6">
-          <mat-form-field class="example-full-width">
-            <input type="text" matInput matTooltip="Info about the action" placeholder="Mã Hàng Hoá">
+          <mat-form-field>
             <input matInput matTooltip="Info about the action" placeholder="Tên Hàng Hoá">
+          </mat-form-field>
+          <br>
+          <mat-form-field>
             <mat-select placeholder="Nhóm Hàng">
-              <mat-option *ngFor="let food of foods" [value]="food.value" >
+              <mat-option *ngFor="let food of foods" [value]="food.value">
                 {{food.viewValue}}
               </mat-option>
             </mat-select>
           </mat-form-field>
         </div>
         <div class="col-xl-6">
-          <mat-form-field class="example-full-width">
+          <mat-form-field>
             <input matInput matTooltip="Info about the action" placeholder="Giá vốn">
+          </mat-form-field> <br>
+          <mat-form-field>
             <input matInput matTooltip="Info about the action" placeholder="Giá Bán">
           </mat-form-field>
         </div>
+      </div>
+      <div class="col-xl-12">
+        <input #imageInput type='file' accept="image/*">
+      </div>
+      <div class="col-xl-12" style="text-align: center">
+        <button mat-flat-button color="primary" submit=""><i class="material-icons">
+            send
+          </i>Submit</button>
       </div>
     </form>
   </mat-tab>

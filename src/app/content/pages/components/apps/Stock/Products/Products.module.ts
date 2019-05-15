@@ -7,13 +7,13 @@ import {
     MatTableModule,
     MatPaginatorModule,
     MatButtonModule,
-    MatDialogModule,
     MatTabsModule,
     MatTooltipModule,
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule
 } from '@angular/material';
+import { MatDialogModule } from '@angular/material/dialog';
 import { AddProductsComponent } from './add-products/add-products.component';
 @NgModule({
     imports: [
@@ -24,10 +24,10 @@ import { AddProductsComponent } from './add-products/add-products.component';
                 component: T_ProductsComponent
             }
         ]),
+        MatButtonModule,
         MatCardModule,
         MatTableModule,
         MatPaginatorModule,
-        MatButtonModule,
         MatDialogModule,
         MatTabsModule,
         MatTooltipModule,
@@ -35,7 +35,7 @@ import { AddProductsComponent } from './add-products/add-products.component';
         MatInputModule,
         MatSelectModule
     ],
-    declarations: [T_ProductsComponent, AddProductsComponent],
-    entryComponents:[AddProductsComponent]
+    declarations: [T_ProductsComponent,AddProductsComponent],
+    entryComponents: [AddProductsComponent]
 })
 export class ProductsModule { }

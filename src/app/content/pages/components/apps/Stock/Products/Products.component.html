@@ -9,6 +9,9 @@
 	</div>
 	<div class="header__right">
 		<div class="import__file">
+			<mat-form-field>
+				<input matInput (keyup)="Search($event.target.value)" placeholder="Search">
+			</mat-form-field>
 			<button mat-flat-button color='primary' (click)="fileImport.click()">
 				<i class="material-icons">
 					arrow_forward

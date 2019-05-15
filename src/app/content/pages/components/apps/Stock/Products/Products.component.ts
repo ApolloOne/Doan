@@ -36,8 +36,6 @@ export class T_ProductsComponent implements OnInit {
 		private dialog: MatDialog
 	) { }
 
-
-
 	displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
 	dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 	@ViewChild(MatPaginator) paginator: MatPaginator;
@@ -45,10 +43,13 @@ export class T_ProductsComponent implements OnInit {
 	ngOnInit() {
 		this.dataSource.paginator = this.paginator;
 	}
+	Search(filterValue: string) {
+		this.dataSource.filter = filterValue.trim().toLowerCase();
+	}
 	openpopup() {
 		const dialogConfig = new MatDialogConfig();
-		dialogConfig.width = "300px";
-		dialogConfig.autoFocus=true;
-		this.dialog.open(AddProductsComponent);
+		dialogConfig.width = "800px";
+		dialogConfig.height = "400px";
+		this.dialog.open(AddProductsComponent, dialogConfig);
 	}
 }
