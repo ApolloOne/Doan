@@ -9,6 +9,10 @@
 	</div>
 	<div class="header__right">
 		<div class="import__file">
+			<mat-form-field>
+				<mat-icon matPrefix>search</mat-icon>
+				<input matInput type="search" (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+			</mat-form-field>
 			<button mat-flat-button color='primary' (click)="fileImport.click()">
 				<i class="material-icons">
 					arrow_forward
@@ -32,11 +36,6 @@
 
 <mat-card>
 	<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-
-		<!--- Note that these columns can be defined in any order.
-			  The actual rendered columns are set as a property on the row definition" -->
-
-		<!-- Position Column -->
 		<ng-container matColumnDef="position">
 			<th mat-header-cell *matHeaderCellDef> No. </th>
 			<td mat-cell *matCellDef="let element"> {{element.position}} </td>
@@ -59,7 +58,24 @@
 			<th mat-header-cell *matHeaderCellDef> Symbol </th>
 			<td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
 		</ng-container>
-
+		<ng-container matColumnDef="action">
+			<th mat-header-cell *matHeaderCellDef> Action </th>
+			<td mat-cell *matCellDef="let element">
+				<a href="" style="color:#716aca">
+					<mat-icon class="mat-icon material-icons" role="img" aria-hidden="true"
+						matTooltip="Edit this product">create</mat-icon>
+				</a>
+			</td>
+		</ng-container>
+		<ng-container matColumnDef="delete">
+			<th mat-header-cell *matHeaderCellDef> </th>
+			<td mat-cell *matCellDef="let element">
+				<a href="" style="color:#f4516c">
+					<mat-icon class="mat-icon material-icons" role="img" aria-hidden="true"
+						matTooltip="Delete about the action">delete</mat-icon>
+				</a>
+			</td>
+		</ng-container>
 		<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
 		<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 	</table>
